@@ -9,7 +9,7 @@ const Dashboard = () => {
 
   return (
     <Container >
-      <Box sx={{ width: "100%", fontWeight: 800 }} p={2}>
+      <Box sx={{ width: "100%", fontWeight: 800 }} py={4}>
         <Typography variant="h2" color={"primary"} textAlign={"center"}>
           {" "}
           Community
