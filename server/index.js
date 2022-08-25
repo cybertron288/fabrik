@@ -37,6 +37,8 @@ try {
   console.log("DB Connection Error")
 }
 
+app.use(express.static(path.resolve(__dirname, './build')))
+
 app.use(cors(corsOpts)) // Allowing all connection from any origin
 
 app.use("/api", ModelRoutes) // model routes
