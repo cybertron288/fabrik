@@ -20,7 +20,7 @@ conn.once("open", () => {
 
 // @route POST /upload
 // @desc  Uploads file to DB
-const uploadFile = async (req, res, file) => {
+const uploadFile = async (req, res) => {
   let modelObj = {
     originalname: req.file.originalname,
     filename: req.file.filename,
@@ -49,7 +49,6 @@ const uploadFile = async (req, res, file) => {
 const getFiles = (req, res) => {
   try {
     gfs.files.find().toArray((err, files) => {
-      let modelList = []
       // Check if files
       if (!files || files.length === 0) {
         return res.status(404).json({

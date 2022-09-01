@@ -15,18 +15,6 @@ import UploadFile from "./UploadFile"
 import ModelContext from "../context/Model/ModelContext"
 import { useNavigate } from "react-router-dom"
 
-const fakeData = [
-  { modelName: "model1", modelId: "1" },
-  { modelName: "model2", modelId: "2" },
-  { modelName: "model3", modelId: "3" },
-  { modelName: "model4", modelId: "4" },
-  { modelName: "model5", modelId: "5" },
-  { modelName: "model6", modelId: "6" },
-  { modelName: "model7", modelId: "7" },
-  { modelName: "model8", modelId: "8" },
-  { modelName: "model9", modelId: "9" },
-  { modelName: "model10", modelId: "10" },
-]
 
 const ModelList = () => {
   const navigate = useNavigate()
@@ -41,7 +29,7 @@ const ModelList = () => {
 
   const handleChange = (e) => {
     setSearchField(e.target.value)
-    const searchModel = fakeData.filter((data) => {
+    const searchModel = allModels.filter((data) => {
       return data.modelName.toLowerCase().includes(e.target.value.toLowerCase())
     })
     setModelList(searchModel)

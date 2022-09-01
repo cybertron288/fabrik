@@ -65,14 +65,11 @@ const Model = () => {
       >
         <Suspense fallback={<Loader />}>
           <Stage intensity={0.1} environment={"city"} preset={"soft"}>
-            {/* {url && <Scene />} */}
-            {/* <primitive object={gltf.scene} /> */}
             {url && modelType === "fbx" ? (
               <FbxScene scale={[0.1, 0.1, 0.1]} />
             ) : (
               <GltfScene scale={[0.1, 0.1, 0.1]} />
             )}
-            {/* <FbxScene /> */}
             {/* <ambientLight args={["#ffffff", 1]} /> */}
             {/* <directionalLight /> */}
           </Stage>
