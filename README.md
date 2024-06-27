@@ -1,12 +1,10 @@
 
 # Fabrik
 
-A simple web appp for uploading and viewing glTF and FBX 3D models.
+A user-friendly web app for uploading, viewing, and interacting with glTF and FBX 3D models. Easily manage and visualize your 3D assets directly in your browser.
 
 
-## Demo
 
-https://fabrikapp.herokuapp.com/
 ## Run Locally
 
 To run this app you need to run client and server both at same time. please follow below steps to run the code.
