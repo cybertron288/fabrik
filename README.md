@@ -66,9 +66,4 @@ Start Frontend
 
 
 [![My Skills](https://skills.thijs.gg/icons?i=react,nodejs,mongodb)](https://skills.thijs.gg)
-## Environment Variables
 
-I already pushed env file with code so you don't need to add any environment file
-
-
-You can update .env file with your MonngoDB url to use any specific MongoDB.
