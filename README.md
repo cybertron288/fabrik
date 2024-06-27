@@ -61,9 +61,3 @@ Start Frontend
 - [@Cybertron](https://github.com/cybertron288)
 
 
-
-### Built With
-
-
-[![My Skills](https://skills.thijs.gg/icons?i=react,nodejs,mongodb)](https://skills.thijs.gg)
-
